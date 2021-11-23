@@ -1,0 +1,477 @@
+*, body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.testimonial {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  .testimonial {
+    padding: 3rem 0;
+    width: 80vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+        grid-template-areas: "daniel daniel joe kira" "jean patrick patrick kira";
+  }
+}
+
+.testimonial .card.daniel {
+  width: 100%;
+  background: #7541c8;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em 2em 2em;
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.daniel {
+    margin: 0;
+    grid-area: daniel;
+  }
+}
+
+.testimonial .card.daniel .card-svg {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+.testimonial .card.daniel .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .card.daniel .card-header-image {
+  border-radius: 50%;
+  width: 3rem;
+  border: 3px solid #ecf2f8;
+  margin-right: 1em;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.daniel .card-header-image {
+    width: 2.5rem;
+  }
+}
+
+.testimonial .card.daniel .card-header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .card.daniel .card-header-profile .name {
+  font-weight: 500;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.daniel .card-header-profile .name {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.daniel .card-header-profile .job {
+  font-weight: lighter;
+  color: #cfcfcf;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.daniel .card-header-profile .job {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.daniel .card-body .info {
+  font-size: 1.7rem;
+  margin: 0.7em 0;
+  z-index: 3;
+  position: relative;
+}
+
+.testimonial .card.daniel .card-body .description {
+  color: #cfcfcf;
+}
+
+.testimonial .card.jonathan {
+  width: 100%;
+  background: #48556a;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em 2em 2em;
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jonathan {
+    margin: 0;
+    grid-area: joe;
+  }
+}
+
+.testimonial .card.jonathan .card-svg {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+.testimonial .card.jonathan .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .card.jonathan .card-header-image {
+  border-radius: 50%;
+  width: 3rem;
+  border: 3px solid white;
+  margin-right: 1em;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jonathan .card-header-image {
+    width: 2.5rem;
+  }
+}
+
+.testimonial .card.jonathan .card-header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .card.jonathan .card-header-profile .name {
+  font-weight: 500;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jonathan .card-header-profile .name {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.jonathan .card-header-profile .job {
+  font-weight: lighter;
+  color: #cfcfcf;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jonathan .card-header-profile .job {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.jonathan .card-body .info {
+  font-size: 1.7rem;
+  margin: 0.7em 0;
+  z-index: 3;
+  position: relative;
+}
+
+.testimonial .card.jonathan .card-body .description {
+  color: #cfcfcf;
+}
+
+.testimonial .card.jean {
+  width: 100%;
+  background: white;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em 2em 2em;
+  position: relative;
+  color: #19212e;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jean {
+    margin: 0;
+    grid-area: jean;
+    -webkit-box-shadow: 5px 5px 10px #cfcfcf;
+            box-shadow: 5px 5px 10px #cfcfcf;
+  }
+}
+
+.testimonial .card.jean .card-svg {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+.testimonial .card.jean .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .card.jean .card-header-image {
+  border-radius: 50%;
+  width: 3rem;
+  border: 3px solid #cfcfcf;
+  margin-right: 1em;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jean .card-header-image {
+    width: 2.5rem;
+  }
+}
+
+.testimonial .card.jean .card-header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .card.jean .card-header-profile .name {
+  font-weight: 500;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jean .card-header-profile .name {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.jean .card-header-profile .job {
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.jean .card-header-profile .job {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.jean .card-body .info {
+  font-size: 1.7rem;
+  margin: 0.7em 0;
+  z-index: 3;
+  position: relative;
+  opacity: 0.8;
+}
+
+.testimonial .card.jean .card-body .description {
+  opacity: 0.7;
+}
+
+.testimonial .card.patrick {
+  width: 100%;
+  background: #19212e;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em 2em 2em;
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.patrick {
+    margin: 0;
+    grid-area: patrick;
+  }
+}
+
+.testimonial .card.patrick .card-svg {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+.testimonial .card.patrick .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .card.patrick .card-header-image {
+  border-radius: 50%;
+  width: 3rem;
+  border: 3px solid #7541c8;
+  margin-right: 1em;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.patrick .card-header-image {
+    width: 2.5rem;
+  }
+}
+
+.testimonial .card.patrick .card-header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .card.patrick .card-header-profile .name {
+  font-weight: 500;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.patrick .card-header-profile .name {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.patrick .card-header-profile .job {
+  font-weight: lighter;
+  color: #cfcfcf;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.patrick .card-header-profile .job {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.patrick .card-body .info {
+  font-size: 1.7rem;
+  margin: 0.7em 0;
+  z-index: 3;
+  position: relative;
+}
+
+.testimonial .card.patrick .card-body .description {
+  color: #cfcfcf;
+}
+
+.testimonial .card.kira {
+  width: 100%;
+  background: white;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em 2em 2em;
+  position: relative;
+  color: #19212e;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.kira {
+    margin: 0;
+    grid-area: kira;
+    -webkit-box-shadow: 5px 5px 10px #cfcfcf;
+            box-shadow: 5px 5px 10px #cfcfcf;
+  }
+}
+
+.testimonial .card.kira .card-svg {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+
+.testimonial .card.kira .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .card.kira .card-header-image {
+  border-radius: 50%;
+  width: 3rem;
+  border: 3px solid #cfcfcf;
+  margin-right: 1em;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.kira .card-header-image {
+    width: 2.5rem;
+  }
+}
+
+.testimonial .card.kira .card-header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .card.kira .card-header-profile .name {
+  font-weight: 500;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.kira .card-header-profile .name {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.kira .card-header-profile .job {
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+@media (min-width: 375px) {
+  .testimonial .card.kira .card-header-profile .job {
+    font-size: 1rem;
+  }
+}
+
+.testimonial .card.kira .card-body .info {
+  font-size: 1.7rem;
+  margin: 0.7em 0;
+  z-index: 3;
+  position: relative;
+  opacity: 0.8;
+}
+
+.testimonial .card.kira .card-body .description {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=index.css.map */

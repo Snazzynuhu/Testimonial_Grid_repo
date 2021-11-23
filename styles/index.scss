@@ -1,0 +1,324 @@
+@import "./variables";
+@import "./config";
+
+.testimonial {
+  width: 90vw;
+  margin: 0 auto;
+  @include mobile-view{
+      padding: 3rem 0;
+    width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem;
+      grid-template-areas: 
+      "daniel daniel joe kira"
+      "jean patrick patrick kira";
+  }
+  .card.daniel {
+    width: 100%;
+    background: $Moderateviolet;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em 2em 2em;
+    position: relative;
+    color: white;
+    @include mobile-view{
+        margin: 0;
+        grid-area: daniel;
+        // grid-column: 1/3;
+    }
+    .card-svg {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      z-index: 1;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      &-image {
+        border-radius: 50%;
+        width: 3rem;
+        border: 3px solid $Lightgrayishblue;
+        margin-right: 1em;
+        @include mobile-view{
+            width: 2.5rem;
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: column;
+        & .name {
+          font-weight: 500;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+        & .job {
+          font-weight: lighter;
+          color: $Lightgray;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-body {
+      & .info {
+        font-size: 1.7rem;
+        margin: 0.7em 0;
+        z-index: 3;
+        position: relative;
+      }
+      & .description {
+        color: $Lightgray;
+      }
+    }
+  }
+  .card.jonathan {
+    width: 100%;
+    background: $Verydarkgrayishblue;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em 2em 2em;
+    position: relative;
+    color: white;
+    @include mobile-view{
+        margin: 0;
+        grid-area: joe;
+    }
+    .card-svg {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      z-index: 1;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      &-image {
+        border-radius: 50%;
+        width: 3rem;
+        border: 3px solid white;
+        margin-right: 1em;
+        @include mobile-view{
+            width: 2.5rem;
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: column;
+        & .name {
+          font-weight: 500;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+        & .job {
+          font-weight: lighter;
+          color: $Lightgray;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-body {
+      & .info {
+        font-size: 1.7rem;
+        margin: 0.7em 0;
+        z-index: 3;
+        position: relative;
+      }
+      & .description {
+        color: $Lightgray;
+      }
+    }
+  }
+  .card.jean {
+    width: 100%;
+    background: $White;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em 2em 2em;
+    position: relative;
+    color: $Verydarkblackishblue;
+    @include mobile-view{
+        margin: 0;
+        grid-area: jean;
+        box-shadow: 5px 5px 10px $Lightgray;
+    }
+    .card-svg {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      z-index: 1;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      &-image {
+        border-radius: 50%;
+        width: 3rem;
+        border: 3px solid $Lightgray;
+        margin-right: 1em;
+        @include mobile-view{
+            width: 2.5rem;
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: column;
+        & .name {
+          font-weight: 500;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+        & .job {
+          font-weight: lighter;
+          opacity: 0.5;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-body {
+      & .info {
+        font-size: 1.7rem;
+        margin: 0.7em 0;
+        z-index: 3;
+        position: relative;
+        opacity: 0.8;
+      }
+      & .description {
+        opacity: 0.7;
+      }
+    }
+  }
+  .card.patrick {
+    width: 100%;
+    background: $Verydarkblackishblue;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em 2em 2em;
+    position: relative;
+    color: white;
+    @include mobile-view{
+        margin: 0;
+        // grid-column: 2/4;
+        grid-area: patrick;
+    }
+    .card-svg {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      z-index: 1;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      &-image {
+        border-radius: 50%;
+        width: 3rem;
+        border: 3px solid $Moderateviolet;
+        margin-right: 1em;
+        @include mobile-view{
+            width: 2.5rem;
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: column;
+        & .name {
+          font-weight: 500;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+        & .job {
+          font-weight: lighter;
+          color: $Lightgray;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-body {
+      & .info {
+        font-size: 1.7rem;
+        margin: 0.7em 0;
+        z-index: 3;
+        position: relative;
+      }
+      & .description {
+        color: $Lightgray;
+      }
+    }
+  }
+  .card.kira {
+    width: 100%;
+    background: $White;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em 2em 2em;
+    position: relative;
+    color: $Verydarkblackishblue;
+    @include mobile-view{
+        margin: 0;
+        grid-area: kira;
+         box-shadow: 5px 5px 10px $Lightgray;
+    }
+    .card-svg {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      z-index: 1;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      &-image {
+        border-radius: 50%;
+        width: 3rem;
+        border: 3px solid $Lightgray;
+        margin-right: 1em;
+        @include  mobile-view{
+            width: 2.5rem;
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: column;
+        & .name {
+          font-weight: 500;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+        & .job {
+          font-weight: lighter;
+          opacity: 0.5;
+          @include mobile-view{
+              font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-body {
+      & .info {
+        font-size: 1.7rem;
+        margin: 0.7em 0;
+        z-index: 3;
+        position: relative;
+        opacity: 0.8;
+      }
+      & .description {
+        opacity: 0.7;
+      }
+    }
+  }
+}
