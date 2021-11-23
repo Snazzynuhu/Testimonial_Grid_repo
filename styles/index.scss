@@ -37,6 +37,8 @@
     .card-header {
       display: flex;
       align-items: center;
+      z-index: 2;
+      position: relative;
       &-image {
         border-radius: 50%;
         width: 3rem;
